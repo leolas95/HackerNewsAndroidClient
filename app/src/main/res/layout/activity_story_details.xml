@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leonardo.hackernewsclient.StoryDetailsActivity">
+
+    <!-- The TabLayout goes inside the ViewPager so the WebView won't cover the TabLayout -->
+    <!-- See: https://developer.android.com/reference/android/support/design/widget/TabLayout.html -->
+    <!-- Still, I don't quite understand right now why this does this works... -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed">
+        </android.support.design.widget.TabLayout>
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.constraint.ConstraintLayout>
